@@ -35,7 +35,7 @@ def test_nearest_neighbor():
             closest_vector = cosine_similarity(target_vector,vectors[i])
             index = i
 
-    result = test_nearest_neighbor(target_vector,vectors)
+    result = nearest_neighbor(target_vector,vectors)
     
     expected_index = index
     
