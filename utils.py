@@ -44,7 +44,7 @@ def nearest_neighbor(target_vector, vectors):
     '''
     closest_vector=cosine_similarity(target_vector,vectors[0])
     index=0
-    for i in vectors:
+    for i in range(len(vectors)):
         if cosine_similarity(target_vector,vectors[i]) > closest_vector:
             closest_vector = cosine_similarity(target_vector,vectors[i])
             index = i
