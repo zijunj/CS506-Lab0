@@ -30,7 +30,7 @@ def test_nearest_neighbor():
     vectors=np.array([[1,3,2],[4,5,6],[3,4,5],[2,3,4]])
     closest_vector=cosine_similarity(target_vector,vectors[0])
     index=0
-    for i in vectors:
+    for i in range(len(vectors)):
         if cosine_similarity(target_vector,vectors[i]) > closest_vector:
             closest_vector = cosine_similarity(target_vector,vectors[i])
             index = i
